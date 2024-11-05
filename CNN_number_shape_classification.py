@@ -71,8 +71,7 @@ def train_model(X,y):
 
 
 X = []
-y_number_shape = []
-y_colour_content = []
+y = []
 for i in range(3):
     for j in range(3):
         for k in range(3):
@@ -88,10 +87,7 @@ for i in range(3):
                     img = img - img.mean()
                     img = img / 255.0  # Normalize to [0, 1]
                     X.append(img)
-                    y_number_shape.append(ENCODER_TWO_PROP[(i,k)])
-                    y_colour_content.append((ENCODER_TWO_PROP[(j,l)]))
+                    y.append(ENCODER_TWO_PROP[(i,k)])
 
 model_number_shape = train_model(X,y_number_shape)
-model_colour_content = train_model(X, y_colour_content)
 model_number_shape.save("cnn_model_number_shape.keras")
-model_colour_content.save("cnn_model_colour_content.keras")
