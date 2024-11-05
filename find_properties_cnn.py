@@ -131,8 +131,8 @@ def predict_colour():
 
 def find_properties(show_white_edges = False):
     # Load the model
-    cnn_model_number_shape = load_model(os.path.join(BASE_DIR, "best_models/cnn_model_number_shape.keras"))
-    content_model = load_model(os.path.join(BASE_DIR, "best_models/cnn_model_content.keras"))
+    cnn_model_number_shape = load_model(os.path.join(BASE_DIR, "cnn_model_number_shape.keras"))
+    content_model = load_model(os.path.join(BASE_DIR, "cnn_model_content.keras"))
     predictions_number_shape = get_predictions(cnn_model_number_shape, show_white_edges)
     predictions_colour = predict_colour()
     predictions_content = get_predictions(content_model)
