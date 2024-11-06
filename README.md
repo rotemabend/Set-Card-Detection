@@ -8,10 +8,13 @@ The card detection process utilizes **OpenCV** and follows these steps:
 
 1. **Edge Detection**: Convert the image to an edge map to highlight card boundaries.
    ![edges image](https://github.com/user-attachments/assets/df5b37fc-be9a-4c67-9fa7-32555a37eb61)
+   
 2. **Contour Extraction**: Extract all contours from the image and filter them based on size, selecting those within a range of the average size * 0.6 to isolate the twelve cards.
    
  ![card_5](https://github.com/user-attachments/assets/f798cd89-fffc-47bb-b995-ef70c00c2789)
+ 
 3. **Preprocessing**: Fill the edges of card images with white pixels to enhance compatibility with CNN input.
+   
 ![after white](https://github.com/user-attachments/assets/125e3204-e26d-4404-9c44-30113942288b)
 
 
