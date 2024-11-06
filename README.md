@@ -1,5 +1,7 @@
 # Set Card Detection Project
 This project focuses on the use of computer vision and deep learning to detect and classify cards from the **SET** game within a board image. The workflow includes identifying card regions using computer vision techniques and employing convolutional neural networks (CNNs) for accurate classification.
+![1](https://github.com/user-attachments/assets/9d6b59c3-b3a0-48c1-b587-0ebe7dbd2d11)
+
 
 ## Card Detection
 The card detection process utilizes **OpenCV** and follows these steps:
